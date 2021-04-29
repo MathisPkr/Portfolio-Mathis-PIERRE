@@ -1,0 +1,520 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(img/White2.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+/*----- NAVBAR -----*/
+
+.navbar {
+  background-color: rgb(0, 0, 0, 0);
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.navbar.navbar-white {
+  background-color: rgb(253, 253, 253, 0.9);
+  padding-bottom: 10px;
+}
+
+li {
+  display: inline-block;
+  padding: 0 25px;
+  margin: 0px;
+}
+
+.nav-menu a {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: "Zen Dots", cursive;
+  color: rgb(0, 0, 0);
+}
+
+.nav-menu a:hover {
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
+  color: white;
+  transition: all 0.3s ease;
+}
+.logonav {
+  width: 100px;
+}
+
+img-white {
+  color: rgb(0, 102, 255);
+}
+
+nav:hover {
+  background-color: rgb(0, 0, 0, 0.05);
+}
+
+.navbar.scroll {
+  background-color: white;
+}
+/*----- NAVBAR -----*/
+
+/*----- Acceuil -----*/
+.acceuil {
+  display: flex;
+  flex-direction: row;
+}
+.acceuil-titres {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 1085px;
+}
+
+.acceuil-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 1085px;
+}
+
+.Titre1 {
+  color: black;
+  font-size: 60px;
+  font-family: "Zen Dots", cursive;
+}
+
+.Titre2 {
+  color: black;
+  font-size: 15px;
+  font-family: "Zen Dots", cursive;
+}
+
+.logo-acceuil {
+  width: 500px;
+}
+
+/*----- Acceuil -----*/
+
+/*----- DELIMITEUR -----*/
+.bandeau {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.barre {
+  height: 5px;
+  width: 100%;
+  background-color: rgb(9, 123, 158);
+  position: relative;
+}
+
+.titreb {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  font-size: 50px;
+  font-family: "Zen Dots", cursive;
+  text-shadow: rgb(5, 5, 5) 1px 0 10px;
+}
+
+/*----- DELIMITEUR -----*/
+
+/*----- PROJET WEB -----*/
+.projet-web {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-web {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 1090px;
+  background-color: cadetblue;
+}
+
+.imagew {
+  width: 100%;
+  object-fit: cover;
+}
+
+.titrepreview1 {
+  /*text-shadow: rgb(205, 5, 255) 1px 0 10px;*/
+  position: absolute;
+  font-size: 50px;
+  font-family: "Zen Dots", cursive;
+  color: rgb(0, 0, 0);
+  margin-top: 600px;
+  margin-left: 1400px;
+}
+
+.titreandroid1 {
+  text-shadow: rgb(255, 187, 0) 1px 0 10px;
+  position: absolute;
+  font-size: 35px;
+  font-family: "Zen Dots", cursive;
+  color: rgb(255, 255, 255);
+  margin-bottom: 150px;
+  margin-left: 1100px;
+}
+
+.titreandroid2 {
+  text-shadow: rgb(255, 187, 0) 1px 0 10px;
+  position: absolute;
+  font-size: 30px;
+  font-family: "Zen Dots", cursive;
+  color: rgb(255, 255, 255);
+  margin-bottom: 50px;
+  margin-left: 1100px;
+}
+
+.titrestage1 {
+  text-shadow: rgb(5, 205, 255) 1px 0 10px;
+  position: absolute;
+  font-size: 50px;
+  font-family: "Zen Dots", cursive;
+  color: rgb(255, 255, 255);
+  margin-top: 600px;
+  margin-left: 0px;
+}
+
+.titrestage2 {
+  text-shadow: rgb(5, 205, 255) 1px 0 10px;
+  position: absolute;
+  font-size: 50px;
+  font-family: "Zen Dots", cursive;
+  color: rgb(255, 255, 255);
+  margin-top: 700px;
+  margin-left: 0px;
+}
+
+svg {
+  /*text-shadow: rgb(205, 5, 255) 1px 0 10px;*/
+  position: absolute;
+  margin-top: 370px;
+  margin-left: 700px;
+  width: 400px;
+}
+.projet-web a {
+  position: absolute;
+}
+.buttonpreview1 {
+  position: absolute;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 4px solid rgb(0, 197, 247);
+  background-color: rgb(0, 197, 247);
+  color: aliceblue;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  font-family: "Zen Dots", cursive;
+
+  width: 200px;
+  margin-top: 420px;
+  margin-left: 600px;
+}
+
+.buttonpreview1:hover {
+  border: 4px solid rgb(0, 197, 247);
+  background: none;
+  color: rgb(0, 197, 247);
+  transform: scale(1.05);
+}
+
+.buttonandroid1 {
+  position: absolute;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 4px solid rgb(0, 197, 247);
+  background-color: rgb(0, 197, 247);
+  color: aliceblue;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  font-family: "Zen Dots", cursive;
+
+  width: 175px;
+  margin-top: 10px;
+  margin-left: 475px;
+}
+
+.buttonandroid1:hover {
+  border: 4px solid rgb(0, 197, 247);
+  background: none;
+  color: rgb(0, 197, 247);
+  transform: scale(1.05);
+}
+
+.buttonstage1 {
+  position: absolute;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 4px solid rgb(0, 197, 247);
+  background-color: rgb(0, 197, 247);
+  color: aliceblue;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  font-family: "Zen Dots", cursive;
+
+  width: 200px;
+  margin-top: 380px;
+  margin-left: 0px;
+  left: -100px;
+}
+
+.buttonstage1:hover {
+  border: 4px solid rgb(0, 197, 247);
+  background: none;
+  color: rgb(0, 197, 247);
+  transform: scale(1.05);
+}
+/*----- PROJET WEB -----*/
+
+/*----- MON CV -----*/
+
+section.all {
+  background-color: rgb(163, 163, 163);
+}
+
+section.moncv {
+  display: flex;
+  flex-direction: row;
+}
+
+.cv-g {
+  width: 50%;
+  height: 1085px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cv-d {
+  width: 50%;
+  height: 1085px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-elements {
+  position: relative;
+  z-index: 50;
+}
+
+.image-cv {
+  width: 800px;
+  height: 950px;
+  border-radius: 10px;
+}
+
+.texte1 {
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 15%;
+  font-family: "Zen Dots", cursive;
+  font-size: 40px;
+  color: white;
+}
+
+.button-tel {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 4px solid rgb(0, 197, 247);
+  background-color: rgb(0, 197, 247);
+  color: aliceblue;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  font-family: "Zen Dots", cursive;
+}
+
+.button-tel:hover {
+  border: 4px solid rgb(0, 197, 247);
+  background: none;
+  color: rgb(0, 197, 247);
+}
+
+/*----- MON CV -----*/
+
+/*=======================================================================================*/
+
+/*----- MEDIA -----*/
+
+/*nav*/
+@media (max-width: 950px) {
+  li {
+    padding: 0 4px;
+  }
+
+  .nav-element a {
+    font-size: 10px;
+  }
+}
+/*titre*/
+@media (max-width: 1150px) {
+  .acceuil {
+    flex-direction: column;
+  }
+
+  .acceuil-titres {
+    height: 542.5px;
+    width: 100%;
+  }
+
+  .acceuil-logo {
+    height: 542.5px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .Titre1 {
+    font-size: 50;
+  }
+
+  .logo-acceuil {
+    width: 300px;
+  }
+}
+
+/*siteweb*/
+@media (max-width: 1900px) {
+  .titrepreview1 {
+    margin-top: 600px;
+    margin-left: 600px;
+  }
+
+  svg {
+    margin-top: 360px;
+    margin-left: 307px;
+    width: 400px;
+  }
+
+  .buttonpreview1 {
+    margin-top: 400px;
+    margin-left: 190px;
+    width: 200px;
+  }
+
+  .titreandroid1 {
+    margin-left: 470px;
+    margin-bottom: 150px;
+    font-size: 30px;
+  }
+
+  .titreandroid2 {
+    margin-left: 470px;
+    margin-bottom: 50px;
+    font-size: 25;
+  }
+
+  .buttonandroid1 {
+    width: 170px;
+    margin-left: 150px;
+    margin-top: 10px;
+  }
+
+  .titrestage1 {
+    font-size: 30;
+    margin-top: 780px;
+  }
+
+  .titrestage2 {
+    font-size: 25;
+    margin-top: 850px;
+  }
+
+  .buttonstage1 {
+    margin-top: 450px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .titrepreview1 {
+    margin-top: 600px;
+    margin-left: 0px;
+    font-size: 30px;
+  }
+
+  svg {
+    margin-top: 340px;
+    margin-left: 0px;
+    width: 300px;
+  }
+
+  .buttonpreview1 {
+    margin-top: 370px;
+    right: -100px;
+    width: 190px;
+  }
+
+  .buttonpreview1:hover {
+    border: 4px solid rgb(0, 197, 247);
+    background: none;
+    color: rgb(0, 197, 247);
+  }
+  .titreandroid1 {
+    font-size: 25;
+    margin-top: 690px;
+    margin-left: 0px;
+  }
+
+  .titreandroid2 {
+    font-size: 15;
+    margin-top: 660px;
+    margin-left: 0px;
+  }
+
+  .buttonandroid1 {
+    margin-top: 330px;
+    right: -97px;
+    width: 190px;
+  }
+
+  .buttonandroid1:hover {
+    border: 4px solid rgb(0, 197, 247);
+    background: none;
+    color: rgb(0, 197, 247);
+  }
+}
+
+/*cv*/
+@media (max-width: 1800px) {
+  .image-cv {
+    width: 500px;
+    height: 700px;
+  }
+  .texte1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .image-cv {
+    width: 200px;
+    height: 500px;
+  }
+  .texte1 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+}
+
+/*----- MEDIA -----*/
+
+/*----- Fonction JS -----*/
+
+/*----- Fonction JS -----*/
