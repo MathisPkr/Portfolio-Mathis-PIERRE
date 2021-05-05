@@ -26,7 +26,7 @@ body {
 }
 
 .navbar.navbar-white {
-  background-color: rgb(253, 253, 253, 0.9);
+  background-color: rgba(255, 255, 255, 0.4);
   padding-bottom: 10px;
 }
 
@@ -106,6 +106,28 @@ nav:hover {
 
 /*----- Acceuil -----*/
 
+/*----- BG-ALL -----*/
+
+section.all {
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+}
+
+/*----- BG-ALL -----*/
+
 /*----- DELIMITEUR -----*/
 .bandeau {
   display: flex;
@@ -116,7 +138,13 @@ nav:hover {
 .barre {
   height: 5px;
   width: 100%;
-  background-color: rgb(9, 123, 158);
+  background: rgb(255, 0, 163);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 163, 1) 0%,
+    rgba(0, 154, 153, 1) 49%,
+    rgba(255, 0, 202, 1) 100%
+  );
   position: relative;
 }
 
@@ -130,7 +158,9 @@ nav:hover {
 
 /*----- DELIMITEUR -----*/
 
-/*----- PROJET WEB -----*/
+/*----- PROJETS -----*/
+
+/*PROJET WEB*/
 .projet-web {
   display: flex;
   justify-content: center;
@@ -150,7 +180,6 @@ nav:hover {
 }
 
 .titrepreview1 {
-  /*text-shadow: rgb(205, 5, 255) 1px 0 10px;*/
   position: absolute;
   font-size: 50px;
   font-family: "Zen Dots", cursive;
@@ -159,53 +188,13 @@ nav:hover {
   margin-left: 1400px;
 }
 
-.titreandroid1 {
-  text-shadow: rgb(255, 187, 0) 1px 0 10px;
-  position: absolute;
-  font-size: 35px;
-  font-family: "Zen Dots", cursive;
-  color: rgb(255, 255, 255);
-  margin-bottom: 150px;
-  margin-left: 1100px;
-}
-
-.titreandroid2 {
-  text-shadow: rgb(255, 187, 0) 1px 0 10px;
-  position: absolute;
-  font-size: 30px;
-  font-family: "Zen Dots", cursive;
-  color: rgb(255, 255, 255);
-  margin-bottom: 50px;
-  margin-left: 1100px;
-}
-
-.titrestage1 {
-  text-shadow: rgb(5, 205, 255) 1px 0 10px;
-  position: absolute;
-  font-size: 50px;
-  font-family: "Zen Dots", cursive;
-  color: rgb(255, 255, 255);
-  margin-top: 600px;
-  margin-left: 0px;
-}
-
-.titrestage2 {
-  text-shadow: rgb(5, 205, 255) 1px 0 10px;
-  position: absolute;
-  font-size: 50px;
-  font-family: "Zen Dots", cursive;
-  color: rgb(255, 255, 255);
-  margin-top: 700px;
-  margin-left: 0px;
-}
-
 svg {
-  /*text-shadow: rgb(205, 5, 255) 1px 0 10px;*/
   position: absolute;
   margin-top: 370px;
   margin-left: 700px;
   width: 400px;
 }
+
 .projet-web a {
   position: absolute;
 }
@@ -232,6 +221,81 @@ svg {
   transform: scale(1.05);
 }
 
+.defpreview {
+  width: 100%;
+  height: 0px;
+  transition: all 1s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.defpreview.open {
+  height: 200px;
+  transition: all 1s ease-out;
+}
+
+.defimg {
+  opacity: 0.5;
+  z-index: 0;
+  background-position: center;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.def {
+  display: none;
+
+  z-index: 2;
+  position: absolute;
+  margin-top: 0px;
+  font-family: "Zen Dots", cursive;
+  font-size: 15px;
+  color: rgb(252, 252, 252);
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+
+.def.open2 {
+  display: flex;
+}
+
+.liensite {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  margin-top: 100px;
+  font-family: "Zen Dots", cursive;
+  font-size: 20px;
+  color: rgb(2, 204, 255);
+  text-shadow: rgb(5, 5, 5) 1px 0 10px;
+}
+
+.liensite.open3 {
+  display: flex;
+}
+/*PROJET WEB*/
+/*PROJET ANFROID*/
+.titreandroid1 {
+  text-shadow: rgb(255, 187, 0) 1px 0 10px;
+  position: absolute;
+  font-size: 35px;
+  font-family: "Zen Dots", cursive;
+  color: rgb(255, 255, 255);
+  margin-bottom: 150px;
+  margin-left: 1100px;
+}
+
+.titreandroid2 {
+  text-shadow: rgb(255, 187, 0) 1px 0 10px;
+  position: absolute;
+  font-size: 30px;
+  font-family: "Zen Dots", cursive;
+  color: rgb(255, 255, 255);
+  margin-bottom: 50px;
+  margin-left: 1100px;
+}
+
 .buttonandroid1 {
   position: absolute;
   padding: 10px 15px;
@@ -253,6 +317,65 @@ svg {
   background: none;
   color: rgb(0, 197, 247);
   transform: scale(1.05);
+}
+
+.defandroid {
+  width: 100%;
+  height: 0px;
+  transition: all 1s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.defandroid.open1 {
+  height: 200px;
+  transition: all 1s ease-out;
+}
+
+.def1img {
+  opacity: 0.5;
+  z-index: 0;
+  background-position: center;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.def1 {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  margin-top: 0px;
+  font-family: "Zen Dots", cursive;
+  font-size: 15px;
+  color: rgb(252, 252, 252);
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+
+.def1.open12 {
+  display: flex;
+}
+/*PROJET ANFROID*/
+/*PROJET STAGE*/
+.titrestage1 {
+  text-shadow: rgb(5, 205, 255) 1px 0 10px;
+  position: absolute;
+  font-size: 50px;
+  font-family: "Zen Dots", cursive;
+  color: rgb(255, 255, 255);
+  margin-top: 600px;
+  margin-left: 0px;
+}
+
+.titrestage2 {
+  text-shadow: rgb(5, 205, 255) 1px 0 10px;
+  position: absolute;
+  font-size: 50px;
+  font-family: "Zen Dots", cursive;
+  color: rgb(255, 255, 255);
+  margin-top: 700px;
+  margin-left: 0px;
 }
 
 .buttonstage1 {
@@ -278,14 +401,53 @@ svg {
   color: rgb(0, 197, 247);
   transform: scale(1.05);
 }
-/*----- PROJET WEB -----*/
+
+.defstage {
+  width: 100%;
+  height: 0px;
+  transition: all 1s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+
+.defstage.imgopen {
+  height: 200px;
+  transition: all 1s ease-out;
+}
+
+.def2img {
+  opacity: 0.5;
+  z-index: 2;
+  background-position: center;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.def2 {
+  display: none;
+  z-index: 3;
+  position: absolute;
+  margin-top: 0px;
+  font-family: "Zen Dots", cursive;
+  font-size: 15px;
+  color: rgb(252, 252, 252);
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+
+.def2.txtopen {
+  display: flex;
+}
+/*----- PROJETS -----*/
 
 /*----- MON CV -----*/
 
-section.all {
-  background-color: rgb(163, 163, 163);
+section.documentation {
+  display: flex;
+  flex-direction: column;
 }
-
 section.moncv {
   display: flex;
   flex-direction: row;
@@ -293,18 +455,7 @@ section.moncv {
 
 .cv-g {
   width: 50%;
-  height: 1085px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.cv-d {
-  width: 50%;
-  height: 1085px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 360px;
 }
 
 .div-elements {
@@ -313,39 +464,315 @@ section.moncv {
 }
 
 .image-cv {
-  width: 800px;
-  height: 950px;
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .texte1 {
   position: absolute;
   z-index: 999;
-  top: 50%;
-  left: 15%;
+  top: 47%;
+  left: 40%;
   font-family: "Zen Dots", cursive;
   font-size: 40px;
   color: white;
+  text-shadow: rgb(255, 187, 0) 1px 0 10px;
 }
 
-.button-tel {
+.texte2 {
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 20%;
+  font-family: "Zen Dots", cursive;
+  font-size: 40px;
+  color: white;
+  text-shadow: rgb(255, 187, 0) 1px 0 10px;
+}
+
+.texte3 {
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 35%;
+  font-family: "Zen Dots", cursive;
+  font-size: 40px;
+  color: white;
+  text-shadow: rgb(255, 187, 0) 1px 0 10px;
+}
+
+.cv-d {
+  width: 50%;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-cv {
   padding: 10px 15px;
   border-radius: 10px;
   border: 4px solid rgb(0, 197, 247);
   background-color: rgb(0, 197, 247);
-  color: aliceblue;
+  color: rgb(253, 253, 253);
   cursor: pointer;
   transition: all 0.3s ease-out;
   font-family: "Zen Dots", cursive;
 }
 
-.button-tel:hover {
+.button-cv:hover {
   border: 4px solid rgb(0, 197, 247);
   background: none;
   color: rgb(0, 197, 247);
+  transform: scale(1.05);
 }
 
+.button-tableau {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 4px solid rgb(0, 197, 247);
+  background-color: rgb(0, 197, 247);
+  color: rgb(253, 253, 253);
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  font-family: "Zen Dots", cursive;
+}
+
+.button-tableau:hover {
+  border: 4px solid rgb(0, 197, 247);
+  background: none;
+  color: rgb(0, 197, 247);
+  transform: scale(1.05);
+}
+
+.button-vj {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 4px solid rgb(0, 197, 247);
+  background-color: rgb(0, 197, 247);
+  color: rgb(253, 253, 253);
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  font-family: "Zen Dots", cursive;
+}
+
+.button-vj:hover {
+  border: 4px solid rgb(0, 197, 247);
+  background: none;
+  color: rgb(0, 197, 247);
+  transform: scale(1.05);
+}
 /*----- MON CV -----*/
+
+/*----- SKILLS -----*/
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.partg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.imgskill img {
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  box-shadow: rgb(0, 0, 0) 0px 0 20px;
+  margin: 20 0px;
+  margin-left: 100px;
+}
+
+.imgskill img:hover {
+  box-shadow: rgb(255, 255, 255) 0px 0 20px;
+  transform: scale(1.05);
+  transition: all 0.3s ease-out;
+}
+
+.partd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.barreskill {
+  margin-right: 800px;
+}
+
+.vide {
+  border: 2px solid rgb(0, 0, 0);
+  width: 700px;
+  height: 20px;
+  border-radius: 20px;
+  margin: 67px;
+  box-shadow: rgb(0, 0, 0) 0px 0 20px;
+}
+
+.rempli1 {
+  background-color: rgb(2, 141, 255);
+  width: 80%;
+  border-radius: 20px;
+  height: 20px;
+  top: 0px;
+}
+
+.rempli2 {
+  background-color: rgb(2, 141, 255);
+  width: 60%;
+  border-radius: 20px;
+  height: 20px;
+  top: 0px;
+}
+
+.rempli3 {
+  background-color: rgb(2, 141, 255);
+  width: 20%;
+  border-radius: 20px;
+  height: 20px;
+  top: 0px;
+}
+
+.rempli4 {
+  background-color: rgb(2, 141, 255);
+  width: 40%;
+  border-radius: 20px;
+  height: 20px;
+  top: 0px;
+}
+
+.rempli5 {
+  background-color: rgb(2, 141, 255);
+  width: 30%;
+  border-radius: 20px;
+  height: 20px;
+  top: 0px;
+}
+
+.rempli6 {
+  background-color: rgb(2, 141, 255);
+  width: 40%;
+  border-radius: 20px;
+  height: 20px;
+  top: 0px;
+}
+
+.rempli7 {
+  background-color: rgb(2, 141, 255);
+  width: 50%;
+  border-radius: 20px;
+  height: 20px;
+  top: 0px;
+}
+
+.rempli8 {
+  background-color: rgb(2, 141, 255);
+  width: 34%;
+  border-radius: 20px;
+  height: 20px;
+  top: 0px;
+}
+
+.rempli9 {
+  background-color: rgb(2, 141, 255);
+  width: 45%;
+  border-radius: 20px;
+  height: 20px;
+  top: 0px;
+}
+
+/*----- SKILLS -----*/
+
+/*----- VEILLE TECHNO -----*/
+
+.VeilleTechno {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.titrevt {
+  font-size: 50px;
+  font-family: "Zen Dots", cursive;
+  color: rgb(7, 7, 7);
+  text-shadow: rgb(54, 54, 54) 1px 0 10px;
+}
+
+.articles {
+  width: 100%;
+  height: 46%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article {
+  width: 30%;
+  height: 90%;
+  margin: 20px;
+  position: relative;
+}
+
+.imgart {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: rgb(0, 0, 0) 0px 0 20px;
+}
+
+.desc {
+  font-family: "Zen Dots", cursive;
+  font-size: 15;
+  color: black;
+  position: absolute;
+  right: 180px;
+  margin-top: 325px;
+  text-shadow: rgb(255, 255, 255) 1px 0 10px;
+}
+
+.imgart:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-out;
+  box-shadow: rgb(3, 217, 255) 0px 0 20px;
+}
+
+/*----- VEILLE TECHNO -----*/
+
+/*----- FOOTER -----*/
+
+.bas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+.copyright {
+  font-size: 10px;
+  font-family: "Zen Dots", cursive;
+  color: white;
+}
+
+/*----- FOOTER -----*/
 
 /*=======================================================================================*/
 
@@ -359,6 +786,10 @@ section.moncv {
 
   .nav-element a {
     font-size: 10px;
+  }
+
+  .desc {
+    font-size: 0;
   }
 }
 /*titre*/
@@ -375,6 +806,10 @@ section.moncv {
   .acceuil-logo {
     height: 542.5px;
     width: 100%;
+  }
+
+  .titrevt {
+    font-size: 30px;
   }
 }
 
@@ -438,6 +873,22 @@ section.moncv {
   .buttonstage1 {
     margin-top: 450px;
   }
+
+  .barreskill {
+    margin-right: 300px;
+  }
+
+  .vide {
+    width: 400px;
+  }
+
+  .imgskill {
+    margin-right: 100px;
+  }
+
+  .desc {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -487,34 +938,54 @@ section.moncv {
     background: none;
     color: rgb(0, 197, 247);
   }
+
+  .barreskill {
+    margin-right: 125px;
+  }
+
+  .vide {
+    width: 200px;
+  }
+
+  .imgskill {
+    margin-right: 125px;
+  }
 }
 
 /*cv*/
 @media (max-width: 1800px) {
   .image-cv {
-    width: 500px;
-    height: 700px;
+    width: 100%;
+    height: 100%;
   }
   .texte1 {
     font-size: 30px;
+    left: 37%;
+  }
+  .texte2 {
+    font-size: 25px;
+    left: 15%;
+  }
+  .texte3 {
+    font-size: 30px;
+    left: 30%;
   }
 }
 
 @media (max-width: 1050px) {
   .image-cv {
-    width: 200px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
   }
   .texte1 {
     font-size: 15px;
   }
-}
-
-@media (max-width: 600px) {
+  .texte2 {
+    font-size: 15px;
+  }
+  .texte3 {
+    font-size: 15px;
+  }
 }
 
 /*----- MEDIA -----*/
-
-/*----- Fonction JS -----*/
-
-/*----- Fonction JS -----*/
